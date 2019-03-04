@@ -27,39 +27,26 @@ Since the focus of this reseach was for the year 2017, survey results from the N
 <h2>Results<h2>
 <h3>Demographics</h3>
 Out of the 56276 people who provided useful response to the survey regarding their age at the time of the survey, 35.4% were between the age of 12-17, 24.5% between the age of 18-25, 24.3% between the age of 26-34, and 15.6% were 35 and above.
-With regards to race, 58.8% of the respondents were Caucasian, 18.1% identified as Hispanic, 12.5% as Black or African American, 4.6% Asian,1.5% native american/AK natives, 0.46% HI/Pacific Islanders, and 3.8% more than one race. Majority of the respondents
-3    0.253892
-5    0.243834
-4    0.206162
-2    0.200245
-1    0.095867
+With regards to race, 58.8% of the respondents were Caucasian, 18.1% identified as Hispanic, 12.5% as Black or African American, 4.6% Asian,1.5% native american/AK natives, 0.46% HI/Pacific Islanders, and 3.8% more than one race. 
+[insert about education]
+
 
 [make sure to highlight number of participants that responded to heroin us]
 <h3>ALCYRTOT: Past 12 Months Alcohol Use</h3>
 
-![Screen Shot 2019-03-03 at 21.44.29.png](quiver-image-url/2A8DCDE40E204CB56995E1BA96C65A83.png =451x282)
 The Distribution of Alcohol used can be described as multimodal and assymetric in shape. The median is 48 days, which means that about 50% of the respondents consumed alcohol 13.1% of the year with a min consumption of once during the year and a max of all 365 days of the year. The spread as measured by standard deviation is ~91 days.
 [needs to measure skewness]
 <br>
 
-![Screen Shot 2019-03-03 at 23.09.39.png](quiver-image-url/06F9CDAFD96D328223577D5ED42DA8D5.png =440x283)
 
-![Screen Shot 2019-03-03 at 23.22.40.png](quiver-image-url/C5AA0C08ADCA83D68A64C46C5A6EB33A.png =465x286)
-![Screen Shot 2019-03-03 at 23.24.20.png](quiver-image-url/06095B2CE75B2E97CF5C3F3AC5362ACE.png =470x282)
 Using these three visualizations, the distribution of alcohol use appears to fit the Weibull analytic distribution. The graphing of the complementary CDF on log-log y scale and log x scale shows a linear relationship, which is the expected form of a weibull on these scales. Alternatively, a kernel density estimation was used to smoothen out the data to see whether it fits an analytic model's pdf and the result shows the curvature of a weibull under some unknown parameter. Similar observations were made in the distribution of heroin use.
 
 <h3>HERYRTOT: Past 12 Months Alcohol Use</h3>
 
-![Screen Shot 2019-03-03 at 23.30.02.png](quiver-image-url/DFE0D996DB1CAE1BAAD03D981EF4FF26.png =440x287)
 The distribution of heroin use is multimodal asymmetric in shape, just like the distribution of alcohol use. The median is 87.5% -  a huge difference of ~40 days from alcohol use. Similar to alcohol, the two extremes show that some respondents only resorted to heroin once a year while others were using it daily. The interquartile range shows the spread of the middle 50% of the observations to be 206 days.
 
 [needs to measure skewness]
-<br>
-![Screen Shot 2019-03-03 at 23.32.09.png](quiver-image-url/A8DDC8AC6AB3008E4B0B54F633056964.png =446x283)
 
-![Screen Shot 2019-03-03 at 23.34.00.png](quiver-image-url/1CF352AFBBFDFC0FB99C96A22D4F2EC3.png =451x281)
-
-![Screen Shot 2019-03-03 at 23.35.03.png](quiver-image-url/D53440275FD7042729220AA3CC0956C7.png =482x284)
 
 <h3>Correlation Analysis</h3>
 <ul>
@@ -70,7 +57,6 @@ The distribution of heroin use is multimodal asymmetric in shape, just like the 
 <li>pvalue: pvalue=0.00390 </li>
 </ul>
 
-![Screen Shot 2019-03-03 at 23.36.05.png](quiver-image-url/2B488D291651451D0240B113D1890DFF.png =476x294)
 <h2>Conclusion</h2>
 Although alcohol abuse is common in the US and the opiod crisis has become a national epidemic, there's a stark difference in yearly consumptions of alcohol and the yearly consumption of heroin.
 <br><br>
