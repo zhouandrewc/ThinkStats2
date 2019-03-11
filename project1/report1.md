@@ -1,77 +1,45 @@
-<head>
-<h3>Daphka Alius</h3>
-<h3>March 4, 2019</h3>
-<br>
+# Heroin and Alcohol: Could there be a relationship?
 
-<h1>Analyzing the relationship between yearly alcohol consumption to yearly heroin consumption in the US in 2017</h1>
-</head>
+On October 26, 2017, Donald Trump and his administration declared the opiod epidemic a national *Public Health Emergency.* This declaration allows both federal and state health agencies to apply and use fund to prevent the spread of the opiod epidemic. With an increased in prescription and access to opiod medications, there has been a widespread misuse of opiods, making opiods drugs some of the most abused substances in the US. The *US Department of Health and Human Services* reported that **"opiod overdoses accounted for more than 42,000 deats in 2016."** Among the non-medically prescribed abused form of opiod in the US is heroin. The *National Institute on Drug Abuse Prescription* describe medically prescribed opiods like **Oxycodin** and **Vicodin** to have similar effects to heroin, making them just as likely to be abused especially with the increase access through prescriptions. Another substance that's highly abused in the US is alcohol. The *CDC* reports that **88,000 deaths from 2006-2010 has been related to excessive alcohol consumption.** Given the prevalence of alcohol an heroin abuse in the US, this project investigates whether there exists a relationship between alcohol consumption and heroin consumption. 
 
-<h2>Introduction</h2>
-
-This project examines the relationships between alcohol use and and heroin use in the US. This analysis was accomplished using public data from the National Survey of Drug Use and Health (NSDUH). The purpose of NSDUH is to “measure the prevalence and correlates of drug use in the united states. Since 1991, the target population of the survey has been civilians (including those living on military bases) who were at least 12 years of age at the time of the survey. The sample is representative of all the 50 states and has been designed to collect larger sample size for the larger states while maintaining sufficient sample size of the smaller states. Since 2014, the survey has oversampled youths aged 12-17 and young adults age 18-26 while also placing more samples in the 26 and older age groups. For further details on the methodologies of the survey, please see [link].
-
-<h2>History of Heroin/Alcohol Abuse in the US</h2>
-
-[INSERT History of Alcohol Abuse in the US]
-
-Heroin is a powerful non-medically prescribed opiate narcotic in the US but has been granted pharmaceutical grade outside of the US. Opiums have been known for their pain relieving properties since [insert date]. 
-[Snippet to provide context to the comparison]
-
-<https://drugabuse.com/heroin/history-statistics/>
+## National Survey of Drug Use and Health 2017
+In order to proceed with the investigation, data was collected from the National *Survery of Drug Use and Health* (NSDUH)for the year 2017. The purpose of NSDUH is to measure the prevalence and correlates of drug use in the united states. The Survey targets repondents who were at least 12 years of age at the time of the survey. NSDUH draws from a representative sample of all the 50 states in the US. Since 2014, youths of age 12-17 and young adults 18-25 were oversampled and more samples were also targeted for the 26-older age group. For further details on the methodologies and details of the survey, please see the [codebook](http://samhda.s3-us-gov-west-1.amazonaws.com/s3fs-public/field-uploads-protected/studies/NSDUH-2017/NSDUH-2017-datasets/NSDUH-2017-DS0001/NSDUH-2017-DS0001-info/NSDUH-2017-DS0001-info-codebook.pdf).
 
 
-<h2>Methods</h2>
+## Demographics of the 2017 Respondents
+### Age
+![Screen Shot 2019-03-09 at 20.52.03.png](quiver-image-url/3B2381941CEE4871B47373AFDBA60DFB.png =446x289)
 
-Since the focus of this reseach was for the year 2017, survey results from the NSDUH was collected, cleaned and validated. To provide background on the participants of the survey, demographics analysis along the line of race, age group, and education was completed. [highlight highest participants of these groups]. To pursue further, two variables were selected for correlation analysis: alcyrtot - which refers to alcohol use for the past 12 months and heryrtot - which refers to usage of heroin in the past 12 months [needs to confirm if it’s prescribed or not]. Prior to correlation analysis, preliminary exploratory analysis of these variables were performed. The distributions of the data were plotted and described using their summary statistics that describes the shape, center, and spread. Furthermore, we examined whether the two variables can be modeled using an analytic distribution such as normal, lognormal, exponential, and weibull. In addition, a kernel density estimation analysis was performed to smoothen the data to determine whether the data fits an analytical model’s pdf. For the correlation analysis, the two variables were plotted to determine if there exists a linear relationship and regression analysis followed to determined the strength of the correlation.
+### Race
+![Screen Shot 2019-03-09 at 20.56.27.png](quiver-image-url/FF65F6E561592E2719578BFAE249E506.png =459x371)
 
-<h2>Results<h2>
-<h3>Demographics</h3>
-Out of the 56276 people who provided useful response to the survey regarding their age at the time of the survey, 35.4% were between the age of 12-17, 24.5% between the age of 18-25, 24.3% between the age of 26-34, and 15.6% were 35 and above.
-With regards to race, 58.8% of the respondents were Caucasian, 18.1% identified as Hispanic, 12.5% as Black or African American, 4.6% Asian,1.5% native american/AK natives, 0.46% HI/Pacific Islanders, and 3.8% more than one race. 
-[insert about education]
+### Education
+![Screen Shot 2019-03-09 at 20.57.25.png](quiver-image-url/5D7406C804EAFD071B2629AD9C1AB1A6.png =437x380)
 
+Out of the 56,276 respondents that provided data to the survey, majority of the respondents were youths and young adults of the age 12-26, making 60% of the respondents. Given the age-education level correspondence, it was unsurprising to see that the majority of the respondents were in K-12 education or has had some college level education. The sample was racially diversed with racial makeup similar to that of the US, with majority of the respondents idenfying as Caucasian, 18.1% Hispanic, 12.5% Black or African American. The other racial groups were minorities in the survey.
 
-[make sure to highlight number of participants that responded to heroin us]
-<h3>ALCYRTOT: Past 12 Months Alcohol Use</h3>
+## Methodologies
+In order to determine if there exists a relationship between heroin and alcohol consumption the following two variables were selected for correlation analysis: **alcyrtot** - which refers to alcohol use for the past 12 months and **heryrtot** - which refers to usage of heroin in the past 12 months. Preliminary exploratory analysis of these variables were performed. The distributions of the data were plotted and described using summary statistics that describe the shape, center, and spread and was examined to see if any of the analytic distribution can be used to model the dataset. Lastly, the two variables were plotted to determine if there exists a linear relationship and regression analysis followed to determined the strength of the correlation.
 
-The Distribution of Alcohol used can be described as multimodal and assymetric in shape. The median is 48 days, which means that about 50% of the respondents consumed alcohol 13.1% of the year with a min consumption of once during the year and a max of all 365 days of the year. The spread as measured by standard deviation is ~91 days.
-[needs to measure skewness]
-<br>
+## Results
+### Alcohol Consumption
+#### Histogram
+![Screen Shot 2019-03-09 at 21.16.57.png](quiver-image-url/F198A9F045A257B7A6C2BC53242D9CC2.png =467x280)
+For the year 2017, 33,532 of the 56,276 (59.6%) of respondents reported to have consume alcohol from the previous 12 months. As can be observed in the histogram, the distribution of alcohol consumption for the year 2017 is multi-modal, asymmetric and right skewed with median of 48.0 days out of the 365 days of the year. The observations are widely spread. The standard deviation is 91.3 days, with a maximum report of consuming alcohol daily over the course of the year.
+#### Cumulative Distribution Function
+![Screen Shot 2019-03-09 at 21.19.13.png](quiver-image-url/FFD975AE2F9ADE8031A5E8D814E79E55.png =431x274)
 
+### Heroin Consumption
+#### Histogram
+![Screen Shot 2019-03-10 at 12.11.38.png](quiver-image-url/9D19F0D9B7D7A77A771277F5683620DD.png =427x278)
+As for Heroin, we have 212 respondents who reported to have consume heroin from the previous 12 months. While this is a small percentage of consumers as compared to consumers of alcohol, we observed a high usage of heroin among this group. The median of consumption of heroin over 365 days was 87.5 days. This is 1.8 times more than the median of alcohol consumption. The observations were high in variation with standard deviation amounting to 128.5 days. The maximum numbers of days reported to have consumed heroin from the previous year was 365 days, which is every day for the past year.
+#### Cumulative Distribution Function
+![Screen Shot 2019-03-10 at 12.12.53.png](quiver-image-url/06E9B0FA4CC9F643A6994300BD59530B.png =447x275)
 
-Using these three visualizations, the distribution of alcohol use appears to fit the Weibull analytic distribution. The graphing of the complementary CDF on log-log y scale and log x scale shows a linear relationship, which is the expected form of a weibull on these scales. Alternatively, a kernel density estimation was used to smoothen out the data to see whether it fits an analytic model's pdf and the result shows the curvature of a weibull under some unknown parameter. Similar observations were made in the distribution of heroin use.
+By looking at the Cumulative Distribution Function (CDF) of both variables, we observe similar pattern/shape. The CDF function measures the percentile rank of each day of consumption. Using different plotting scale, we were able to determine that the two variables could be modeled mathematically using an exponential/weibull distribution function. Understanding this feature of the two variables is beneficial when extrapolating for values that were not found in our observations. Exponential distributions, a special kind of weibull distribution, is typically used to measure the interarrival time between events of a random variable. In this case, we are measuring the number of days (time) of alcohol/heroin consumption which is also a random variable that can take values between 0 - 365 days, making the exponential model a good fit for our two variables.
 
-<h3>HERYRTOT: Past 12 Months Alcohol Use</h3>
+#### Correlation Analysis
 
-The distribution of heroin use is multimodal asymmetric in shape, just like the distribution of alcohol use. The median is 87.5% -  a huge difference of ~40 days from alcohol use. Similar to alcohol, the two extremes show that some respondents only resorted to heroin once a year while others were using it daily. The interquartile range shows the spread of the middle 50% of the observations to be 206 days.
+![Screen Shot 2019-03-10 at 12.24.15.png](quiver-image-url/CD2B75D036458F98EF065C3FF268087D.png =437x282)
 
-[needs to measure skewness]
-
-
-<h3>Correlation Analysis</h3>
-<ul>
-<li>correlation coefficient: -0.22</li>
-<li>intercept: 140 days of heroin use/year</li>
-<li>slope: for every increment of alcohol consumed, we see 0.27 days less of heroin consumption</li>
-<li>standard error: 0.095</li>
-<li>pvalue: pvalue=0.00390 </li>
-</ul>
-
-<h2>Conclusion</h2>
-Although alcohol abuse is common in the US and the opiod crisis has become a national epidemic, there's a stark difference in yearly consumptions of alcohol and the yearly consumption of heroin.
-<br><br>
-
-
-<h2>Comments/Questions: </h2>
-<body>
-This is a very rough draft of the summary of the analysis of these two variables. It does not read like a blog as of this moment. Here are some of my concerns. 
-<ul>
-<li>Am I comparing apple to oranges even if they're in the same units? Should I standardize to show a clear comparison of the two variables</li>
-<li>Should I consider binning by age groups since alcohol abused is usually known for being more common among 
-young people but who consumes heroin the most? I think that can add more to the story.</li>
-<li>Also, I'm having a tough time interpreting my results - needs to find a way to make the results as clear to any reader</li>
-<li>Needs to frame a story - (working on that part): Is it possible to talk about how maybe the people who consume alcohol the most do/do not also abuse alcohol </li>
-<li>how to relabel the categorical variables (age groups, race, etc) to be clear to readers</li>
-<li>how to deal with discrepancy from results in code book versus results from dataset analys in the case of demographics?</li>
-</ul>
-</body>
+Now that we have a better understanding of the two variables, a linear regression was performed to measure whether there was a correlation or association between the two variables. The two variables were plotted against each other using a scatter plot. There's a weak, negative linear correlation between the two variables with correlation coeffient r = -0.22. Although the observations do not take the typical shape of the rugby/football ball that usually signals a linear relation, we know that it's statistically significant to highlight the linear relation between the two variables with a p-value of 0.0039. As opposed to the rugby shape, the plot above depicts that the majority of the points cluster around the axes, highlighting that most people do not typically use both substances.
