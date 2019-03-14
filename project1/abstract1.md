@@ -1,11 +1,5 @@
-<head>
-<h3>Daphka Alius</h3>
-<h3>March 4, 2019</h3>
-<br>
+#Are People Using Heroin Also Drinking Alcohol Consistently?
+####Daphka Alius
 
-<h1>Abstract</h1>
-</head>
 
-<body>
-Alcohol abuse is a disease that affects millions in the US. Similarly, opiods have become a national healh crisis signaling a substantial increase in opiods use in the US. This project attempts at signaling the difference and reports the relationship between the consumption of alcohol in the US and the consumption of heroin (a commonly used/abused opioid) in the US for the year 2017. Under the hypothesis that alcohol consumption can predict the consumption of heroin, there seems to be a weak, negative, linear relationship between the two variables under question, with correlation coefficient of -0.22.
-</body>
+Alcohol abuse is a disease that affects millions in the US. Similarly, opioids have become a national health crisis signaling a substantial increase in opioids use. The question under investigation is whether the same people who abuse heroin, a form of opioid, are also drinking congruously throughout the year. Using data from National Survey of Drug Use and Health, I found that people who infrequently (<30 days) drink alcohol in a year are consuming heroin 1.7 times longer in a year than those who frequently (>300 days) drink alcohol. The two variables appear to be weakly correlated with a Pearson correlation that corresponds to -0.22.
