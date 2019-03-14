@@ -9,7 +9,8 @@ In order to proceed with the investigation, I collected data from the *National 
 
 ## Demographics of the 2017 Respondents
 ### Age
-
+![age](ThinkStats2/project1/images/Screen Shot 2019-03-09 at 20.52.03.png)
+      
 
 To gain a better understanding of the background of the respondents, I looked at the distribution of age, race, and education at the time they were participating in the survey. When looking at the distribution of age, as is shown above, the graph confirms the oversample of youths and young adults between the age of 12-25 as they make up approximately 60% of the respondents with a large portion being minors under the age of 18.
 
