@@ -37,6 +37,7 @@ As for Heroin, we have 212 respondents who reported to have consume heroin from 
 
 #### Cumulative Distribution Function
 
+Next, I plotted the Cumulative Distribution Function (CDF) of both variables, the CDFs have similar shape as can be seen from the graph above. The CDF function measures the percentile rank of the number of days of consumption. Using different axes to plot the CDFs, I conclude that the two variables could be modeled mathematically using an exponential/Weibull distribution function. Understanding this feature of the two variables is beneficial when extrapolating for values that were not found in our observations. Exponential distributions, a special kind of Weibull distribution, is typically used to measure the inter-arrival time between events of a random variable. In this case,  alcohol/heroin consumption, a random variable, measures the number of days (time) a person reported to have used/drank heroin or alcohol, making the exponential model a good fit for our two variables.
 
 #### Relationship
 
