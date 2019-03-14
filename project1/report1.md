@@ -10,15 +10,17 @@ In order to proceed with the investigation, I collected data from the *National 
 ## Demographics of the 2017 Respondents
 ### Age
 
+![age](/project1/images/Screen%20Shot%202019-03-09%20at%2020.52.03.png)
 
 To gain a better understanding of the background of the respondents, I looked at the distribution of age, race, and education at the time they were participating in the survey. When looking at the distribution of age, as is shown above, the graph confirms the oversample of youths and young adults between the age of 12-25 as they make up approximately 60% of the respondents with a large portion being minors under the age of 18.
 
 ### Race
+![race](/project1/images/Screen%20Shot%202019-03-09%20at%2020.56.27.png)
 
 The racial makeup of the respondents was remarkably representative of the racial makeup of the US. A representative group of respondents is crucial in providing a clear racial picture of who is using and abusing different substances.
 
 ### Education
-
+![education](/project1/images/Screen%20Shot%202019-03-12%20at%2023.31.39.png)
 Out of the 56,276 participants of the survey, majority were youths and young adults. Hence, it is unsurprising to see that the majority (49.6%) of the respondents were either in K-12 or had some college level education by the time they were surveyed.
 
 Now after having a better understanding of the respondents' demographics, I proceeded with the investigation.
@@ -29,17 +31,19 @@ In order to determine if there exists a relationship between heroin and alcohol 
 
 ### Exploratory Analysis of the Two Variables
 #### Distribution of Alcohol Consumption
-
+![alcohol](r/project1/images/Screen%20Shot%202019-03-14%20at%2019.14.48.png)
 For the year 2017, 33,532 of the 56,276 (59.6%) of the respondents reported to have consume alcohol from the previous 12 months. The distribution of alcohol consumption is multi-modal, asymmetric, and right skewed with a median of 48.0 days out of the 365 days of the year. The observations are widely spread. The standard deviation is 91.3 days, with a maximum report of 365 days of alcohol consumption over the course of the year. Using a sort of grouping system that categorizes responses into infrequently, almost daily, at least weekly, and at least monthly, most respondents (approximately 90%) fall either into the infrequently group, reporting less than 30 days of consumption over 12 months, or into the weekly group which reports between 52-300 days of consumption.
 
 #### Distribution of Heroin Consumption
+![heroin](/project1/images/Screen%20Shot%202019-03-14%20at%2019.13.33.png)
+
 As for Heroin, we have 212 respondents who reported to have consume heroin from the previous 12 months. While this is a small percentage of responses as compared to consumers of alcohol, the days of consumption were relatively high. The median of consumption of heroin over 365 days was 87.5 days. This is 1.8 times more than the median of alcohol consumption. The observations were high in variation with standard deviation amounting to 128.5 days. The maximum number of days reported was 365. Similar to alcohol, heroin users fall either in the infrequent group or at least weekly with approximately 37% of respondents reporting using heroin between 52-300 days a year.
 
 #### Cumulative Distribution Function
+![CDF](/project1/images/Screen%20Shot%202019-03-13%20at%2011.27.08.png)
 
 Next, I plotted the Cumulative Distribution Function (CDF) of both variables, the CDFs have similar shape as can be seen from the graph above. The CDF function measures the percentile rank of the number of days of consumption. Using different axes to plot the CDFs, I conclude that the two variables could be modeled mathematically using an exponential/Weibull distribution function. Understanding this feature of the two variables is beneficial when extrapolating for values that were not found in our observations. Exponential distributions, a special kind of Weibull distribution, is typically used to measure the inter-arrival time between events of a random variable. In this case,  alcohol/heroin consumption, a random variable, measures the number of days (time) a person reported to have used/drank heroin or alcohol, making the exponential model a good fit for our two variables.
 
-#### Relationship
-
-
-Lastly, to observe if there is an association between the two variables, I binned alcohol by days reported and looked at the mean of days of heroin use that were reported for each bin. Once again, I categorized the dependent variable alcohol into infrequently, almost daily, at least weekly, at least monthly and observed the mean of those groups. As can be seen in the graph, the group categorized as infrequent alcohol consumers depicts the highest mean of heroin use as compared to the other groups. In this case, it is clear that people who are using heroin for the most number of days are not the same people who are also drinking alcohol more frequently. The pearson correlation of the two variables is -0.22, although statisitcally signification with p-value 0.003, shows that there's a weak association between the two variables. Therefore, I don't expect knowing someone's heroin consumption throughout the year to be a strong determinant factor in predicting their alcohol consumption. However, the graph displays that people who use alcohol infreqently (<30 days/year)reported 1.7 times more days of heroin in a year as compared to frequent alcohol consumers. There could be many factors influencing this result. Firstly, both substance might prove to be costly, forcing the consumers to pick one over the other. Age might be another factor as well. Minors are probably more like to have access to alcohol than heroin. In conclusion, I found that given a sample of predominantly youths and young adults between the age of 12-26, infrequent drinkers are more likely to prolongly use heroin than frequent drinkers.
+#### Relationship between Alcohol and Heroin
+![alc_her](/project1/images/Screen%20Shot%202019-03-14%20at%2019.13.05.png)
+Lastly, to observe if there is an association between the two variables, I binned alcohol by days reported and looked at the mean of days of heroin use that were reported for each bin. Once again, I categorized the dependent variable alcohol into infrequently, almost daily, at least weekly, at least monthly and observed the mean of those groups. As can be seen in the graph, the group categorized as infrequent alcohol consumers depicts the highest mean of heroin use as compared to the other groups. In this case, it is clear that people who are using heroin for the most number of days are not the same people who are also drinking alcohol more frequently. The pearson correlation of the two variables is -0.22, although statisitcally signification with p-value 0.003, shows that there's a weak association between the two variables. Therefore, I don't expect knowing someone's heroin consumption throughout the year to be a strong determinant factor in predicting their alcohol consumption. However, the graph displays that people who use alcohol infreqently (<30 days/year)reported 1.7 times more days of heroin in a year as compared to frequent alcohol consumers. There could be many factors influencing this result. Firstly, both substance might prove to be costly, forcing the consumers to pick one over the other. Age might be another factor as well. Minors are probably more like to have access to alcohol than heroin. In conclusion, I found that given a sample of predominantly youths and young adults between the age of 12-26, infrequent drinkers are more likely to prolong the use heroin than frequent drinkers.
