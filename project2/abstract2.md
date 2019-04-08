@@ -1,0 +1,2 @@
+# Time Series Analysis of the S&P 500
+Time Series are a sequence of observations taken at discrete intervals in time. Time series are worth investigated due to the powerful insights they provide in forecasting and predicting future observations. This project will employ different statistical tools, such as statsmodels, to forecast the 2018 yearly returns of the S&P 500 Index. Time series analysis has been one of many tools used to analyze stocks and model returns.
