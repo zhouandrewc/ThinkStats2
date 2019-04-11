@@ -62,14 +62,14 @@ Time Series data have the property that the observations are ordered which means
 
 Statsmodels provides a function called **plot_acf** which plots the autocorrelation function of the data set using lag = 40 and alpha = 0.05, which means that it returns cone signaling the 95% confidence interval.
 
-![acf_plot](
+![acf_plot](images/acf1.png)
 
 As is expected, the autocorrelation is not constant since the data is not stationary.
 
 ### Transforming Data into Stationary by Taking the Differences
 In order to transform the time series to stationary, I employ statsmodels *diff* function using a lag of order 1 (d = 1) by default, which means that it computes the autocorrelation of *t<sub>i</sub>* with *t<sub>i+1</sub>* for *i* up to *n* where *n* is the number of observations in the time series.
 
-[insert acf plt for]
+[acf plt](images/transformed_acf.png)
 
 The ADF statistics based on this transformation are as followed:
 + ADF Statistics: -15.155031303806982
@@ -94,14 +94,29 @@ These three components are the parameters  used to create the model. statsmodels
 ### Forecast
 The ARIMA object from statsmodels includes a *fit* method which fits the model and allow the use of the forecast method to predict the 12 values. 
 
-[insert table]
+| Date          | Expected      | Forecast     |
+| ------------- |:-------------:| ------------:|
+| 2018-01-01    | $2823.810059  | $2683.870430 |
+| 2018-02-01    | $2713.830078  | $2691.492655 |
+| 2018-03-01    | $2640.870117  | $2699.026234 |
+| 2018-04-01    | $2648.050049  | $2706.556834 |
+| 2018-05-01    | $2705.270020  | $2714.087333 |
+| 2018-06-01    | $2718.370117  | $2721.617830 |
+| 2018-07-01    | $2816.290039  | $2729.148326 |
+| 2018-08-01    | $2901.520020  | $2736.678823 |
+| 2018-09-01    | $2913.979980  | $2744.209319 |
+| 2018-10-01    | $2711.739990  | $2751.739815 |
+| 2018-11-01    | $2760.169922  | $2759.270312 |
+| 2018-12-01    | $2506.850098  | $2766.800808 |
+
+![forecast](images/forecast.png)
 
 The fit result also has a *resid* method which returns the residual of each observation and the prediction of the model.
 
-[insert plot]
+![resid](images/residuals.png)
 
 The plot shows the residuals with a mean of 0 clustering around the horizontal axis for the most part which means that the model was potentially a good fit. Another calculation for how well the model fit the data is the root mean squared error. It can be interpreted as the standard deviation of the unexplained variance and is expressed in the same terms as the dependent variable. In this case the root mean error of the actual 2018 monthly values is approximately $13,3111. Evaluating the plot including the actual prices and the forecasted prices, there's a high deviation between the two segments. There are many factors that could have impacted the actual prices that caused this deviation including political and economic factors that the model does not consider. However, it's worth considering performing this analysis with a different set of parameters and see if there's a better fit.
 
 
 ## Conclusion
-In performing this time series analysis, I've become familiar with the tools and packages in Python that can facilitate a full analysis and predictions. I've summarized a few of the fundamental and technical ways of performing exploratory analysis that test for stationarity as well as creating an ARIMA model that can forecast future observations. For further details on the methodologies, see this ![notebook]().
+In performing this time series analysis, I've become familiar with the tools and packages in Python that can facilitate a full analysis and predictions. I've summarized a few of the fundamental and technical ways of performing exploratory analysis that test for stationarity as well as creating an ARIMA model that can forecast future observations. For further details on the methodologies, see this ![notebook](project2.ipynb).
