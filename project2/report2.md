@@ -23,11 +23,11 @@ Any time series analysis is based on the assumption that the observations have t
 Trend and seasonality are a great indicator of a property known as stationarity, A data is considered stationary if all the observations are from the same distribution. In other words, a time series is stationary if the mean, variance, and correlation are constant over time. Stationarity is an important property when building a model because most models do not account for the trend. If the time series is non-stationary, then it must be transformed to stationary.
 
 One way to determine trend is to plot the variable and see if decreases or increases in the long run.
-[insert plot]
+![adjclose](images/adjclose.png)
 
 Based on this plot, it shows an increasing pattern over the 20 years period. However, there's a lot of variation in the observations. A statistical tool, known as a *rolling mean* can be used to smoothen out the short-term fluctuations in the data in order to highlight long-term trends. Here I use a window of 12 months, which means that the function selects on a rolling basis a 12 month interval to calculate the mean. I've also calculated the rolling standard deviation to see if there's any volatility.
 
-[insert rolling plot]
+![rollingmean](images/rollingmean.png)
 
 The result of the rolling mean smoothens some of the volatility of the stock market and visibly depict an upward trend that confirms the increasing pattern of the S&P500 Index. Additionally, the rolling standard deviation shows some variation in standard deviation. Knowing these two patterns, we can safely say that the data is non-stationary.
 
@@ -37,7 +37,7 @@ In addition to using this method to determine stationary, there are two addition
 ### Seasonal Decompose
 Statsmodels provide a method called **seasonal_decompose** which breaks down your time series into its three components.
 
-[insert decompose plot]
+![seasonal](images/decomposition.png)
 
 This method returns three plots for trend, seasonality, and noise. From the plot above, it is clear that there's an increasing **trend**.  There seems to be some **seasonality** which was not obvious from just plotting the data. These tools both graphically and statistically provided a preliminary test of stationary using basic tools. However, there is an even more robust test of stationarity called the Augmented Dickey-Fuller Test which can be also be accessed via statsmodels time series analysis tools.
 
@@ -62,7 +62,7 @@ Time Series data have the property that the observations are ordered which means
 
 Statsmodels provides a function called **plot_acf** which plots the autocorrelation function of the data set using lag = 40 and alpha = 0.05, which means that it returns cone signaling the 95% confidence interval.
 
-[insert acf plot]
+![acf_plot](
 
 As is expected, the autocorrelation is not constant since the data is not stationary.
 
