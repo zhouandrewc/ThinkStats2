@@ -80,7 +80,7 @@ The ADF statistics based on this transformation are as followed:
 
 Note that the value of the ADF test is strongly negative and the p-value is significantly smaller than before which means the data has been transformed from non-stationary to stationary. Now we will employ the ARIMA model to forecast the 2018 adjusted prices.
 
-## Using the ARIMA model to forecast the Monthly Prices of 2018
+## Using the ARIMA model to Forecast the Monthly Prices of 2018
 
 ### What is ARIMA?
 ARIMA stands for **A**utoregressive **I**ntegrated **M**oving **A**verage.
