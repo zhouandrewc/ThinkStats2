@@ -39,7 +39,7 @@ Statsmodels provide a method called **seasonal_decompose** which breaks down you
 
 ![seasonal](images/decomposition.png)
 
-This method returns three plots for trend, seasonality, and noise. From the plot above, it is clear that there's an increasing trend.  There seems to be some **seasonality** which was not obvious from just plotting the data. This tool graphically provide a preliminary test of stationarity. However, there is an even more robust test of stationarity called the Augmented Dickey-Fuller Test which can also be accessed via statsmodels time series analysis tools.
+This method returns three plots for trend, seasonality, and noise. From the plot above, it is clear that there's an increasing trend.  There seems to be some seasonality which was not obvious from just plotting the data. This tool graphically provide a preliminary test of stationarity. However, there is an even more robust test of stationarity called the Augmented Dickey-Fuller Test which can also be accessed via statsmodels time series analysis tools.
 
 ### Augmented Dickey-Fuller Test for Stationarity
 In simple terms, the Augmented Dickey-Fuller Test for Stationarity is a statistical test known as a unit root test. A unit root test determines how strongly a time series is defined by its trend. The null hypothesis is that a time series can be represented by a unit root, which would imply that the time series is non-stationary.  The alternate hypothesis is the negation - that it is stationary. The more negative the ADF statistics, the more that it supports the null hypothesis. Similarly, if we find a large p-value from this test, then we can determine that our variable is non-stationary and a smaller p-value would indicate stationary.
@@ -84,9 +84,9 @@ Note that the value of the ADF test is strongly negative and the p-value is sign
 ### What is ARIMA?
 ARIMA stands for **A**utoregressive **I**ntegrated **M**oving **A**verage.
 
-Autoregression p*- refers to the dependent relationship between an observation and some number of lagged observation
-Integrated *d*- refers to the difference of the raw observations (i.e the shifting required to transform observations to make time series stationary)
-Moving Average *q* - a succession of averages derived from successive segments
++ Autoregression p*- refers to the dependent relationship between an observation and some number of lagged observation
++ Integrated *d*- refers to the difference of the raw observations (i.e the shifting required to transform observations to make time series stationary)
++ Moving Average *q* - a succession of averages derived from successive segments
 
 These three components are the parameters  used to create the model. statsmodels provides an ARIMA function which creates the model with the parameters *p, d, q*. To create a model for the S&P 500 data, I use the parameter p = 1, d = 1, and q = 0 . I estimate p = 1 because the data is highly correlated to itself as was seen from the ACF plot and d = 1 since it was sufficient to transform the data from non-stationary to stationary.
 
