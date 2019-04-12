@@ -121,6 +121,6 @@ The plot shows the residuals with a mean of 0 clustering around the horizontal a
 In performing this time series analysis, I've become familiar with the tools and packages in Python that can facilitate a full analysis and predictions. I've summarized a few of the fundamental and technical ways of performing exploratory analysis that test for stationarity as well as creating an ARIMA model that can forecast future observations. For further details on the methodologies, see this [notebook](project2.ipynb).
 
 ## Resources
-[Performing a Time Series Analysis of the S&P 500](https://www.datascience.com/blog/stock-price-time-series-arima)
-[How to Check if Time Series Data is Stationary with Python](https://machinelearningmastery.com/time-series-data-stationary-python/)
+[Performing a Time Series Analysis of the S&P 500](https://www.datascience.com/blog/stock-price-time-series-arima)<br>
+[How to Check if Time Series Data is Stationary with Python](https://machinelearningmastery.com/time-series-data-stationary-python/)<br>
 [How to Create an ARIMA Model for Time Series Forecasting in Python](https://machinelearningmastery.com/arima-for-time-series-forecasting-with-python/)
