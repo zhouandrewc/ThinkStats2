@@ -13,20 +13,28 @@ The GSS is a national survey whose mission is to provide policymakers and academ
 
 
 #### Education
+![education](images/education.png)
 Given the 62,292 valid responses to highest year of school completion, majority of the respondents have at least completed high school. The most notable categories represents is 12 years (High Scool) with 30 percent of respondents, 14 years (Associate Degree/Some College) with 10.9 percent, and lastly, 16 years (Bachelor Degree) with 12.6 percent.
 
 #### Income
+![income](images/income.png)
+
 The breakdown of as can be seen with the histogram above, unimodal and right skewed with median of 24097 dollars while the minimum income reported is $234 and the maximum is 162,607 dollars. The standard deviation of income is approximately $29,402. Out of the 56,141 respondents, 75 percent have reported to a family income of $39,022 or less.
 
-<!--#### Religion-->
-<!--Christianity, Judaism, and "other" accounts for majority of the religious preferences provided by respondents in the survey. They make up 86.8 percent of the responses while "None" represents 11.6 percent of the responses. When the variable was recoded to be a binary outcomes, out of the 62,197 respondents, 97 percent claims to have a religious preference while 3 percent claims to have none. -->
+#### Religion
+![religion](images/religion.png)
+
+Christianity, Judaism, and "other" accounts for majority of the religious preferences provided by respondents in the survey. They make up 86.8 percent of the responses while "None" represents 11.6 percent of the responses. When the variable was recoded to be a binary outcomes, out of the 62,197 respondents, 97 percent claims to have a religious preference while 3 percent claims to have none.
 
 #### Health
 
 
 #### Happiness
+![happy](images/happy.png)
 Based on the results of the World Happiness Report, the US scored 6.892 out of 10 and the highest ranking while the top ranked country Finland scored 7.632. Those numbers provide a scoring metrics that captures the countries growth, social support, life expectancy and much more. However, from the mouth of everyday Americans that participate in the GSS survey, about 63 percent would consider themselves at least pretty happy. 
 
+
+![breakdown](images/breakdown.png)
 It turns out that out of all the factors such as health, income, religion, education, health has a strong effects on happiness. Based on the results of the survey, it can be seen that a people who are of excellent would describe their general happiness as "very happy" at more than twice the rate than a person of poor health. On the other end of the spectrum, a person with poor health is over 5 times more likely to describe themselves as "not too happy" than those who are of excellent health. A person's general health can be impacted by genetics, making them prone to more illnesses and diseases. However, if one can reach at least fair health, they can experience a life that's pretty happy.
 
 Additionally, the distribution of income between the three happiness levels show that people who consider themselves very happy had a mean income that was 5673.8 dollars higher than those who consider themselves pretty happy and 14,950 dollars higher than those who are not too happy. Education level does not appear to be as different among the three levels. All three groups were very close in terms of the average of the highest number of years of education completed. Those who were "very happy" or "pretty happy" had a mean of 13 years and those "not too happy" had a mean of 12 years.
